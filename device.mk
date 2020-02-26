@@ -373,6 +373,14 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     telephony-ext
 
+# fwk_detect
+PRODUCT_PACKAGES +=\
+    libqti_vndfwk_detect
+
+# TextClassifier
+PRODUCT_PACKAGES += \
+    textclassifier.bundle1
+
 # Thermal
 PRODUCT_PACKAGES += \
     thermal.msm8937
