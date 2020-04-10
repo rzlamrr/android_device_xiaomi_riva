@@ -141,16 +141,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.radio.multisim.config=dsds \
-    ro.telephony.default_network=9,1 \
+    ro.telephony.default_network=22,22 \
     ro.telephony.call_ring.multiple=false \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1 \
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
     persist.vendor.data.mode=concurrent
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.delta_time.enable=true \
+
+# SurfaceFlinger
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.protected_contents=true \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+    ro.surface_flinger.vsync_event_phase_offset_ns=4000000 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=8000000
 
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \
