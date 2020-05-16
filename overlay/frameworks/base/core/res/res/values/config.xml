@@ -363,4 +363,13 @@
          fading edges is prohibitively expensive on most GPUs. -->
     <bool name="config_ui_enableFadingMarquee">true</bool>
 
+    <!-- Enable live display -->
+    <bool name="config_liveDisplayAvailable">true</bool>
+
+    <!-- Use live display for temperature control-->
+    <bool name="config_nightDisplayAvailable">false</bool>
+
+    <!-- Whether device ignores the RSSNR signal implementation -->
+    <bool name="config_ignoreRssnrSignalLevel">true</bool>
+
 </resources>
