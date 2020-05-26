@@ -41,4 +41,4 @@
 
 # Root filesystem
 /firmware(/.*)?                                 u:object_r:firmware_file:s0
-/presist(/.*)?                                  u:object_r:persist_file:s0
+/persist(/.*)?                                  u:object_r:persist_file:s0
