@@ -200,6 +200,9 @@ BOARD_SEPOLICY_DIRS += \
      $(DEVICE_PATH)/sepolicy \
      $(DEVICE_PATH)/sepolicy/msm8917
 
+# surfaceflinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
