@@ -167,3 +167,11 @@ ro.debuggable=1
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.maintainer.name=Hhjnxxi
+
+# Cpu
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.processor.model=Snapdragon_425
